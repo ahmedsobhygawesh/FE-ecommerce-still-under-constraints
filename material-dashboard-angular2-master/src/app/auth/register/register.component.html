@@ -1,0 +1,145 @@
+<div class="main-content">
+    <div class="container-fluid">
+
+        Kick-Tos
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Registration</h4>
+                        <p class="card-category">Lets start your journey </p>
+                    </div>
+                    <div class="card-body">
+                        <form autocomplete="off">
+
+
+                            <div class="row">
+<!--                                <div class="col-md-5">-->
+<!--                                    <mat-form-field class="example-full-width">-->
+<!--                                        <input matInput placeholder="Company (disabled)" disabled>-->
+<!--                                    </mat-form-field>-->
+<!--                                </div>-->
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input autocomplete="off" [(ngModel)]="usr.userName" name="username" matInput placeholder="Username">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput [(ngModel)]="usr.email" name="userEmail" placeholder="Email address" type="email">
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="col-md-4">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput [(ngModel)]="usr.mobile" name="userMobile" placeholder="Mobile Number" type="text">
+                                </mat-form-field>
+                            </div>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="usr.password" name="password" matInput placeholder="Password" type="password">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput name="rePassword" placeholder="Re-password" type="password">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput [(ngModel)]="usr.fullName" name="fullName" placeholder="Full name" type="text">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="usr.national_id" name="nationalId" matInput placeholder="National Id" type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input  [(ngModel)]="usr.gender" matInput name="gender" placeholder="Gender" type="text">
+                                    </mat-form-field>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput [(ngModel)]="usr.city" name="userCity" placeholder="City" type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput [(ngModel)]="usr.country" name="userCountry" placeholder="Country" type="text">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput [(ngModel)]="usr.detailedAddress" name="userAddress" placeholder="Address" type="text">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+
+
+                            <div style="text-align: center">
+                            <button mat-raised-button (click)="registration()" type="submit" class="btn btn-danger ">Register</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--  left side fo redirect to login  -->
+
+
+            <div class="col-md-4">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="javascript:void(0)">
+                        <!--<img class="img" src="./assets/img/faces/marc.jpg" />-->
+
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <mat-icon style="padding-top: 0.5%" aria-hidden="false" aria-label="beenhere">beenhere</mat-icon>
+
+                         <h4 class="card-title">Already a Registered User</h4>
+                        <p class="card-description">
+                         you have an account already registered, you can directly move to Login Page
+                        </p>
+
+                        <button (click)="navigateToLogin()" class="btn btn-danger btn-round">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

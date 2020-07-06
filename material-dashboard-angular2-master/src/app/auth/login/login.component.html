@@ -1,0 +1,58 @@
+<div class="main-content">
+    <div class="container-fluid">
+        Kick-Tos
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Login</h4>
+                        <p class="card-category">Lets start your journey </p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="currentAndLoginUser.mobile" name="mobile" autocomplete="off"   matInput placeholder="User Mobile">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="currentAndLoginUser.password" name="password" matInput placeholder="password" type="password">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+
+                            <div style="text-align: center">
+                                <button mat-raised-button (click)="login()" type="submit" class="btn btn-danger ">Login</button>
+                            </div>
+                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="javascript:void(0)">
+                            <!-- <img class="img" src="./assets/img/faces/marc.jpg" />-->
+
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <mat-icon style="padding-top: 0.5%" aria-hidden="false" aria-label="contacts">contacts</mat-icon>
+
+                        <h4 class="card-title">Not Registered Yet</h4>
+                        <p class="card-description">
+                            You did not have an account to take a journey in your site, let's register
+                        </p>
+
+                        <button (click)="navigateToRegister()" class="btn btn-danger btn-round">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
